@@ -1,6 +1,6 @@
 # Dairy Business
 
-#### Dairy Business is a website that helps in monitoring rpoduction and sales of milk.
+#### Dairy Business is a website that helps in monitoring production and sales of milk.
 
 # Getting Started
 
@@ -25,13 +25,14 @@ $ cd AgriPlus
 
 # Built Using
 
-- HTML
-- CSS
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 # Author
 
-- Isaack Mungui
+- [Isaack Mungui](https://github.com/isaack-mungui)
 
 # License
 
-Find license information here
+Find license information [here](./LICENSE)
