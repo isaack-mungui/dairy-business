@@ -14,21 +14,23 @@
     </head>
     <body>
         <h1>DairyBusiness</h1>
-        <div class="input-fields">
-            <label for="shades">Choose a shade:</label>
-            <select name="shades" id="shades">
-                <option>Shade 1</option>
-                <option>Shade 2</option>
-                <option>Shade 3</option>
-                <option>Shade 4</option>
-                <option>Shade 5</option>
-                <option>Shade 6</option>
-            </select>
 
-            <input type="text" placeholder="Value" id="value-field">
-
-            <button id="submit">Submit</button>
+        <select id="shades" onChange="addInputField(this);">
+            <option>Select a shade</option>
+            <option>Shade 1</option>
+            <option>Shade 2</option>
+            <option>Shade 3</option>
+            <option>Shade 4</option>
+            <option>Shade 5</option>
+            <option>Shade 6</option>
+        </select>
+        <div id="input-field" style="display: none;">
+            <label>Enter a value:
+                <input type="text" placeholder="Value">
+            </label>
         </div>
+
+        <button id="submit">Submit</button>
 
         <!-- Add JS file -->
         <script src="./index.js"></script>
