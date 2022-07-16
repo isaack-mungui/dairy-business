@@ -1,4 +1,4 @@
-function addInputField(elem) {
+const addInputField = (elem) => {
     if (elem.selectedIndex != 0) {
         document.getElementById("input-field").style.display = 'block';
     } else {
