@@ -43,7 +43,25 @@
             </label>
         </div>
 
-        <button id="submit" onClick="">Submit</button>
+        <!-- Report input fields -->
+        <select id="report" onChange="addIncomeReportInputField(this);">
+            <option>Select report type:</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Yearly</option>
+        </select>
+        <div id="income-report-input-field" style="display: none;">
+            <label>Enter selling price and time: <br/>
+                <input type="number" placeholder="Selling Price" onblur="totalProduction()" id="input-1-price">
+            </label>
+            <label><br/>
+                <input type="number" placeholder="Number of days" onblur="totalProduction()" id="input-1-time">
+            </label>
+        </div>
+
+        <input type="button" onclick="totalProduction()" value="Submit"/>
+        <input type="button" onclick="incomeOverTime()" value="Income Reports over time" />
 
         <!-- Add JS file -->
         <script src="./index.js"></script>
