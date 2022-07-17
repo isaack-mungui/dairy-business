@@ -2,6 +2,13 @@
 
 #### Dairy Business is a website that helps in monitoring production and sales of milk.
 
+<br/>
+
+# Preview
+
+![](./assets/Dairy%20Business.png)
+
+
 # Getting Started
 
 ### These instructions will get you a copy of the project on your local machine.
