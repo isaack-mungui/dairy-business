@@ -21,16 +21,29 @@
             <option>Shade 2</option>
             <option>Shade 3</option>
             <option>Shade 4</option>
-            <option>Shade 5</option>
-            <option>Shade 6</option>
         </select>
-        <div id="input-field" style="display: none;">
-            <label>Enter a value:
-                <input type="text" placeholder="Value">
+        <div id="input-field-1"style="display: none;">
+            <label>Enter a value: <br/>
+                <input type="number" placeholder="Value for shade A" onblur="totalProduction()" id="input-1">
+            </label>
+        </div>
+        <div id="input-field-2" style="display: none;">
+            <label>Enter a value: <br/>
+                <input type="number" placeholder="Value for shade B" onblur="totalProduction()" id="input-2">
+            </label>
+        </div>
+        <div id="input-field-3" style="display: none;">
+            <label>Enter a value: <br/>
+                <input type="number" placeholder="Value for shade C" onblur="totalProduction()" id="input-3">
+            </label>
+        </div>
+        <div id="input-field-4" style="display: none;">
+            <label>Enter a value: <br/>
+                <input type="number" placeholder="Value for shade D" onblur="totalProduction()" id="input-4">
             </label>
         </div>
 
-        <button id="submit">Submit</button>
+        <button id="submit" onClick="">Submit</button>
 
         <!-- Add JS file -->
         <script src="./index.js"></script>
