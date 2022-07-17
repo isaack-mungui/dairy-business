@@ -1,3 +1,4 @@
+// Add shade value input fields
 const addInputField = (elem) => {
     if (elem.selectedIndex == 1) {
         document.getElementById("input-field-1").style.display = 'block';
@@ -12,7 +13,22 @@ const addInputField = (elem) => {
     }
 }
 
+// Add report input fields
+const addIncomeReportInputField = (elem) => {
+    if (elem.selectedIndex == 1) {
+        document.getElementById("income-report-input-field").style.display = 'block';
+    } else if(elem.selectedIndex == 2){
+        document.getElementById("income-report-input-field").style.display = 'block';
+    } else if(elem.selectedIndex == 3) {
+        document.getElementById("income-report-input-field").style.display = 'block';
+    } else if(elem.selectedIndex == 4) {
+        document.getElementById("income-report-input-field").style.display = 'block';
+    } else {
+        document.getElementById("input-field-income-report").style.display = 'none';
+    }
+}
 
+// Total Production
 const totalProduction = () => {
     let shadeA = document.getElementById("input-1").value;
     console.log(`Your production in Shed A: ${shadeA}`);
@@ -27,10 +43,30 @@ const totalProduction = () => {
     console.log(`Your production in Shed D: ${shadeD}`);
 
     let production = parseInt(shadeA) + parseInt(shadeB) + parseInt(shadeC) + parseInt(shadeD);
+    // return production;
     console.log(`The total production is ${production} litres per day`);
 }
 
-// Submit functionality
-document.getElementById("submit").onclick = function() {
-    let val = document.getElementById("")
+// Income Over TIme
+const incomeOverTime = (selling_price, time) => {
+    // Fetch price and time from input
+    selling_price = document.getElementById("input-1-price").value;
+    time = document.getElementById("input-1-time").value;
+
+    // Calculate respective incomes
+    let dailyIncome = selling_price;
+    let weeklyIncome = selling_price * (time / 7);
+    let monthlyIncome = selling_price * (time/ 28);
+    let yearlyIncome = selling_price * (time / 365);
+    
+    // Convert income to integer
+    parseInt(dailyIncome);
+    parseInt(weeklyIncome);
+    parseInt(monthlyIncome);
+    parseInt(yearlyIncome);
+
+    console.log(`Your daily income will be Ksh ${dailyIncome}`);
+    console.log(`Your weekly income will be Ksh ${weeklyIncome}`);
+    console.log(`Your monthly income will be Ksh ${monthlyIncome}`);
+    console.log(`Your yearly income will be Ksh ${yearlyIncome}`);
 }
