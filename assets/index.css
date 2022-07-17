@@ -51,6 +51,12 @@ input {
     text-align: center;
 }
 
+#income-report-input-field {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+
 .report-button {
     display: flex;
     justify-content: center;
