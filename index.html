@@ -14,54 +14,67 @@
     </head>
     <body>
         <h1>DairyBusiness</h1>
+        <div class="select-shade">
+            <div class="shades-container">
+                <select id="shades" onChange="addInputField(this);">
+                    <option>Select a shade</option>
+                    <option>Shade 1</option>
+                    <option>Shade 2</option>
+                    <option>Shade 3</option>
+                    <option>Shade 4</option>
+                </select>
+            </div>
+            <div class="input-fields">
+                <div id="input-field-1"style="display: none;">
+                    <label>Enter a value: <br/>
+                        <input type="number" placeholder="Value for shade A" onblur="totalProduction()" id="input-1">
+                    </label>
+                </div>
+                <div id="input-field-2" style="display: none;">
+                    <label>Enter a value: <br/>
+                        <input type="number" placeholder="Value for shade B" onblur="totalProduction()" id="input-2">
+                    </label>
+                </div>
+                <div id="input-field-3" style="display: none;">
+                    <label>Enter a value: <br/>
+                        <input type="number" placeholder="Value for shade C" onblur="totalProduction()" id="input-3">
+                    </label>
+                </div>
+                <div id="input-field-4" style="display: none;">
+                    <label>Enter a value: <br/>
+                        <input type="number" placeholder="Value for shade D" onblur="totalProduction()" id="input-4">
+                    </label>
+                </div>
+            </div>
+            <div class="submit"><input type="button" onclick="totalProduction()" value="Submit" id="submit"/></div>
+        </div>    
 
-        <select id="shades" onChange="addInputField(this);">
-            <option>Select a shade</option>
-            <option>Shade 1</option>
-            <option>Shade 2</option>
-            <option>Shade 3</option>
-            <option>Shade 4</option>
-        </select>
-        <div id="input-field-1"style="display: none;">
-            <label>Enter a value: <br/>
-                <input type="number" placeholder="Value for shade A" onblur="totalProduction()" id="input-1">
-            </label>
-        </div>
-        <div id="input-field-2" style="display: none;">
-            <label>Enter a value: <br/>
-                <input type="number" placeholder="Value for shade B" onblur="totalProduction()" id="input-2">
-            </label>
-        </div>
-        <div id="input-field-3" style="display: none;">
-            <label>Enter a value: <br/>
-                <input type="number" placeholder="Value for shade C" onblur="totalProduction()" id="input-3">
-            </label>
-        </div>
-        <div id="input-field-4" style="display: none;">
-            <label>Enter a value: <br/>
-                <input type="number" placeholder="Value for shade D" onblur="totalProduction()" id="input-4">
-            </label>
-        </div>
+        <hr/>
 
         <!-- Report input fields -->
-        <select id="report" onChange="addIncomeReportInputField(this);">
-            <option>Select report type:</option>
-            <option>Daily</option>
-            <option>Weekly</option>
-            <option>Monthly</option>
-            <option>Yearly</option>
-        </select>
-        <div id="income-report-input-field" style="display: none;">
-            <label>Enter selling price and time: <br/>
-                <input type="number" placeholder="Selling Price" onblur="totalProduction()" id="input-1-price">
-            </label>
-            <label><br/>
-                <input type="number" placeholder="Number of days" onblur="totalProduction()" id="input-1-time">
-            </label>
-        </div>
+        <div>
+            <div class="select-report">
+                <select id="report" onChange="addIncomeReportInputField(this);">
+                    <option>Select report type</option>
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                    <option>Yearly</option>
+                </select>
+                <div id="income-report-input-field" class="input-fields" style="display: none;">
+                    <label>Enter selling price and time <br/>
+                        <input type="number" placeholder="Selling Price" onblur="totalProduction()" id="input-1-price">
+                    </label>
+                    <label><br/>
+                        <input type="number" placeholder="Number of days" onblur="totalProduction()" id="input-1-time">
+                    </label>
+                </div>
+            </div>
 
-        <input type="button" onclick="totalProduction()" value="Submit"/>
-        <input type="button" onclick="incomeOverTime()" value="Income Reports over time" />
+            <div class="report-button">
+                <input type="button" onclick="incomeOverTime()" value="Income Reports over time" />
+            </div>
+        </div>
 
         <!-- Add JS file -->
         <script src="./index.js"></script>
