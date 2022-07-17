@@ -1,11 +1,59 @@
 h1 {
-    font-family: 'Oleo Script', cursive;;
+    display: flex;
+    font-family: 'Oleo Script', cursive;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.shades-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
 }
 
 #shades {
-    display: block;
+    text-align: center;
+    width: 50%;
 }
 
-button {
-    margin: 15px;
+.input-fields {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
 }
+
+label {
+    padding-right: 510px;
+}
+
+input {
+    padding: 0 40px;
+    margin: 10px 0;
+    width: 50%;
+    text-align: center;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.select-report {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 10px 0 20px 0;
+}
+
+#report {
+    width: 50%;
+    text-align: center;
+}
+
+.report-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
